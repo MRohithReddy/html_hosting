@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 30px;
+        gap: 20px;
+      }
+      .number {
+        align-items: center;
+        justify-content: center;
+      }
+      .icon,
+      .number {
+        width: 24px;
+        height: 24px;
+      }
+      .heading,
+      .para {
+        font-size: 24px;
+        display: flex;
+      }
+      .para {
+        grid-row: 2/3;
+        grid-column: 2/-1;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="number">01</p>
+    <p class="heading">This is a grid practice section</p>
+    <svg
+      class="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m4.5 12.75 6 6 9-13.5"
+      />
+    </svg>
+    <p class="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+      reprehenderit odio? In exercitationem facilis dolor, molestiae est
+      repellendus veritatis, voluptas voluptates, quod culpa beatae adipisci
+      facere delectus ipsam cum optio!
+    </p>
+  </body>
+</html>
